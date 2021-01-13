@@ -4,19 +4,20 @@ import {
   Switch, 
   Route
 } from 'react-router-dom'
-import NavBar from './components/NavBar'
-import Home from './pages/Home'
-import Reports from './pages/Reports'
-import Products from './pages/Products';
-import Team from './pages/Team';
-import Messages from './pages/Messages';
-import Support from './pages/Support';
+// import NavBar from './components/NavBar'
+// import Home from './pages/Home'
+// import Reports from './pages/Reports'
+// import Products from './pages/Products';
+// import Team from './pages/Team';
+// import Messages from './pages/Messages';
+// import Support from './pages/Support';
+import Sidebar from './components/Sidebar'
 
 function App() {
   return (
     <Router>
     <>
-      <NavBar /> 
+      {/* <NavBar /> 
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/reports" component={Reports}/>
@@ -24,7 +25,8 @@ function App() {
           <Route path="/team" component={Team} />
           <Route path="/messages" component={Messages} />
           <Route path="/support" component={Support} />
-        </Switch>  
+        </Switch>   */}
+        <Sidebar />
     </>
     </Router>
   );
